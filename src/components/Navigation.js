@@ -49,7 +49,7 @@ class Navigation extends React.Component {
             <img className={this.state.barExpand} src={logo} alt="vault" />
           </div>
           <div className="nav__burger">
-            <div onClick={this.burgerAnimation.bind(this)} className="burger">
+            <div onClick={this.burgerAnimation.bind(this)} className={this.state.barOne === "" ? `burger` : `burger burgerAnimated`}>
               <div className={classOne}></div>
               <div className={classTwo}></div>
               <div className={classThree}></div>

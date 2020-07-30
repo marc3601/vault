@@ -48,6 +48,11 @@
   transition: .3s ease;
 }
 
+.wrapper .nav .nav__burger .burgerAnimated {
+  top: 35%;
+  transform: rotate(45deg);
+}
+
 .wrapper .nav .nav__burger .barOneAnimated {
   transform: translateY(8px);
 }

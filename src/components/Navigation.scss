@@ -37,6 +37,10 @@
           transition: .3s ease;
         }
       }
+      .burgerAnimated {
+        top: 35%;
+        transform: rotate(45deg);
+      }
       .barOneAnimated {
         transform: translateY(8px);
       }
