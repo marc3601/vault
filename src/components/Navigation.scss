@@ -9,7 +9,7 @@
       flex: 8;
       img {
         height: 75px;
-        transition: 0.4s ease;
+        transition: 0.7s ease;
         margin-left: 30px;
       }
       .large {
@@ -19,7 +19,6 @@
     .nav__burger {
       flex: 2;
       position: relative;
-      text-align: center;
       .burger {
         position: absolute;
         top: 50%;
@@ -34,7 +33,7 @@
           height: 5px;
           margin-bottom: 3px;
           background-color: rgb(9, 13, 243);
-          transition: .3s ease;
+          transition: 0.3s ease;
         }
       }
       .burgerAnimated {
@@ -52,5 +51,22 @@
         transform: translateY(-8px);
       }
     }
+    .nav__drop {
+      position: absolute;
+      top: 100%;
+      left: 50vw;
+      transform: translateX(-50%);
+      width: 40vw;
+      min-width: 300px;
+      padding: 20px;
+      background-color: lightblue;
+      p {
+        font-family: sans-serif;
+      }
+    }
+  }
+}
+@keyframes dropSmooth {
+  from {
   }
 }
