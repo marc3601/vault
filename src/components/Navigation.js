@@ -48,7 +48,7 @@ class Navigation extends React.Component {
         <p>
           This is an early design of dropdown menu that will contain the most
           important features of this application. Exact points are still to be
-          determined. It's going to be lit! 😊
+          determined. It's going to be lit! <span role="img">😊</span>
         </p>
       </div>
     );
