@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navigation.css";
 import logo from "../images/vault.png";
+import Sidebar from './Sidebar';
 
 class Navigation extends React.Component {
   state = {
@@ -42,16 +43,7 @@ class Navigation extends React.Component {
     const classOne = `one ${this.state.barOne}`;
     const classTwo = `two ${this.state.barTwo}`;
     const classThree = `three ${this.state.barThree}`;
-
-    const dropdown = (
-      <div className="nav__drop">
-        <p>
-          This is an early design of dropdown menu that will contain the most
-          important features of this application. Exact points are still to be
-          determined. It's going to be lit! <span role="img">😊</span>
-        </p>
-      </div>
-    );
+    const showSidebar = `nav__drop ${this.state.barOne !== "" ? "" :"nav__show"}`
     return (
       <div className="wrapper">
         <div className="nav">
@@ -70,7 +62,7 @@ class Navigation extends React.Component {
               <div className={classThree}></div>
             </div>
           </div>
-          {this.state.barOne !== "" ? dropdown : null}
+          <Sidebar show={showSidebar}/>
         </div>
       </div>
     );

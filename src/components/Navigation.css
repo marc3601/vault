@@ -63,24 +63,4 @@
 .wrapper .nav .nav__burger .barThreeAnimated {
   transform: translateY(-8px);
 }
-
-.wrapper .nav .nav__drop {
-  position: absolute;
-  top: 100%;
-  left: 50vw;
-  transform: translateX(-50%);
-  width: 40vw;
-  min-width: 300px;
-  padding: 20px;
-  background-color: lightblue;
-}
-
-.wrapper .nav .nav__drop p {
-  font-family: sans-serif;
-}
-
-@keyframes dropSmooth {
-  from {
-  }
-}
 /*# sourceMappingURL=Navigation.css.map */

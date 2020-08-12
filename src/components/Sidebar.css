@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.nav__drop {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  padding: 20px;
+  background-color: lightblue;
+  transition: 0.4s ease-in-out;
+  box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.75);
+  border-right: 20%;
+}
+
+.nav__drop h3 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav__drop ul {
+  list-style: none;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.nav__drop ul li {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.nav__drop ul i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: green;
+}
+
+.nav__drop ul li:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.nav__drop ul li:nth-child(1) i {
+  color: red;
+  text-shadow: 2px 2px black;
+}
+
+.nav__show {
+  left: -100%;
+}
+/*# sourceMappingURL=Sidebar.css.map */
