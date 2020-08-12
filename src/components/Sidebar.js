@@ -1,25 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Sidebar.css";
 
-class Sidebar extends Component {
-  state = {};
-  render() {
-    return (
-      <div className={this.props.show}>
-        <h3>Menu</h3>
-        <ul>
-          <li>
-            <i class="material-icons">border_color</i>
+function Sidebar(props) {
+  return (
+    <div className={props.show}>
+      <h3>Menu</h3>
+      <ul>
+        <li>
+          <div className="upload">
+            <i className="material-icons">border_color</i>
             <span> Upload File</span>
-          </li>
-          <li>
-            <i class="material-icons">language</i>
+          </div>
+        </li>
+        <li>
+          <div className="info">
+            <i className="material-icons">language</i>
             <span> Learn more</span>
-          </li>
-        </ul>
-      </div>
-    );
-  }
+          </div>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default Sidebar;

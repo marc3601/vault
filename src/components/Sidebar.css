@@ -27,6 +27,22 @@
   vertical-align: middle;
 }
 
+.nav__drop ul li .upload,
+.nav__drop ul li .info {
+  padding: 10px;
+  user-select: none;
+}
+
+.nav__drop ul li .upload:hover,
+.nav__drop ul li .info:hover {
+  box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav__drop ul li .upload:active,
+.nav__drop ul li .info:active {
+  box-shadow: none;
+}
+
 .nav__drop ul i {
   margin-right: 10px;
   font-size: 30px;

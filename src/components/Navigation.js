@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 
 class Navigation extends React.Component {
   state = {
-    barExpand: "",
+    barExpand: "large",
     barOne: "",
     barTwo: "",
     barThree: "",

@@ -20,6 +20,19 @@
     li {
       cursor: pointer;
       vertical-align: middle;
+      .upload,
+      .info {
+        padding: 10px;
+        user-select: none;
+      }
+      .upload:hover,
+      .info:hover {
+        box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.75);
+      }
+      .upload:active,
+      .info:active {
+        box-shadow: none;
+      }
     }
     i {
       margin-right: 10px;
