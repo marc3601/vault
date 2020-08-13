@@ -1,7 +1,8 @@
 import React from "react";
 import "./Navigation.css";
 import logo from "../images/vault.png";
-import Sidebar from './Sidebar';
+import Sidebar from "./Sidebar";
+
 
 class Navigation extends React.Component {
   state = {
@@ -43,7 +44,10 @@ class Navigation extends React.Component {
     const classOne = `one ${this.state.barOne}`;
     const classTwo = `two ${this.state.barTwo}`;
     const classThree = `three ${this.state.barThree}`;
-    const showSidebar = `nav__drop ${this.state.barOne !== "" ? "" :"nav__show"}`
+    const showSidebar = `nav__drop ${
+      this.state.barOne !== "" ? "" : "nav__show"
+    }`;
+  
     return (
       <div className="wrapper">
         <div className="nav">
@@ -62,8 +66,9 @@ class Navigation extends React.Component {
               <div className={classThree}></div>
             </div>
           </div>
-          <Sidebar show={showSidebar}/>
+          <Sidebar show={showSidebar} />
         </div>
+        
       </div>
     );
   }
