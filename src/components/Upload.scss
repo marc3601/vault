@@ -1,14 +1,26 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Lato&display=swap");
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 .uploadWindow {
   position: absolute;
   width: 80vw;
   height: 60vh;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
   margin-left: 50vw;
-  margin-top: 150px;
+  margin-top: 50vh;
+  
   background-color: white;
   opacity: 0.8;
   text-align: center;
+  @include desktop {
+    width: 50vw;
+  }
   .close {
     position: absolute;
     right: 5px;
@@ -18,13 +30,33 @@
       font-size: 40px;
     }
   }
-  h1 {
+  form {
     margin-top: 50px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: yellowgreen;
-}
-  p {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin: 10px 20px 10px 10px;
+    font-family: "Lato", sans-serif;
+    h2 {
+      margin-bottom: 20px;
+      font-family: "Alata", sans-serif;
+    }
+    input {
+      border: 1px solid gray;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 0.8em 1.5em;
+      border-radius: 2em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-weight: 300;
+      color: #ffffff;
+      background-color: #4eb5f1;
+      text-align: center;
+      transition: all 0.2s;
+      cursor: pointer;
+      user-select: none;
+    }
+    button:hover {
+      background-color: #4095c6;
+    }
   }
 }

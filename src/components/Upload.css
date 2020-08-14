@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Lato&display=swap");
 .uploadWindow {
   position: absolute;
   width: 80vw;
   height: 60vh;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   margin-left: 50vw;
-  margin-top: 150px;
+  margin-top: 50vh;
   background-color: white;
   opacity: 0.8;
   text-align: center;
+}
+
+@media (min-width: 840px) {
+  .uploadWindow {
+    width: 50vw;
+  }
 }
 
 .uploadWindow .close {
@@ -22,14 +29,37 @@
   font-size: 40px;
 }
 
-.uploadWindow h1 {
+.uploadWindow form {
   margin-top: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: yellowgreen;
+  font-family: "Lato", sans-serif;
 }
 
-.uploadWindow p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 10px 20px 10px 10px;
+.uploadWindow form h2 {
+  margin-bottom: 20px;
+  font-family: "Alata", sans-serif;
+}
+
+.uploadWindow form input {
+  border: 1px solid gray;
+}
+
+.uploadWindow form button {
+  display: block;
+  margin: 20px auto;
+  padding: 0.8em 1.5em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4eb5f1;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uploadWindow form button:hover {
+  background-color: #4095c6;
 }
 /*# sourceMappingURL=Upload.css.map */

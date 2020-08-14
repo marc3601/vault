@@ -8,11 +8,13 @@ class Upload extends React.Component {
         <div onClick={this.props.hide} className="close">
           <i className="material-icons">close</i>
         </div>
-        <h1>This is a form containing window</h1>
-        <p>
-          It is meant to contain file uploading form for Node backend sometime
-          in the future
-        </p>
+        <form action="/" method="post">
+          <h2>Upload file</h2>
+          <input type="file" accept="image/*" placeholder="Select file" />
+          <button type="submit">Upload</button>
+          <p>The above form is not yet working. No post possible at this point</p>
+        </form>
+        
       </div>
     );
   }
